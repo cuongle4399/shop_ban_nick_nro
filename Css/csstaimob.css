@@ -1,0 +1,32 @@
+
+.instruct {
+    text-align: center;
+    color:black;
+    text-shadow:rgb(180, 9, 243) 4px 4px 4px;
+    font-size:5rem;
+}
+.information {
+    font-size: 25px;
+    font-weight: bold;
+    color:rgb(70, 69, 69);
+    
+}
+.download {
+    cursor:pointer;
+}
+@media (max-width:800px) {
+    .picture{
+        width:100%;
+    }
+    .instruct{
+        font-size:3rem;
+    }
+}
+@media (min-width:800px) {
+    .picture{
+        width:50%;
+        display:flex;
+        position: relative;
+        left:25%;
+    }
+}

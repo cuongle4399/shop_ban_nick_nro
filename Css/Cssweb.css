@@ -1,0 +1,293 @@
+.title {
+    color: rgba(14, 14, 13, 0.949);
+    font-size: 100px;
+    text-align: center;
+    text-shadow: 3px 3px 1px rgb(241, 5, 32);
+    font-weight: bold;
+    background-image: url("../img/backgroudvip.jpg");
+    background-size: cover;
+    background-position:    center;
+    height: 55vh;
+   }
+   a:hover {
+       color:black;
+       border-color: rgb(40, 165, 219);
+       font-family:'Courier New', Courier, monospace;
+   }
+   #mua {
+    margin-top: 10px;
+    width: 350px;
+    height: 50px;
+    font-size: 30px;
+    transition: all 0.5s linear;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  #mua:before {
+    content: "mua ngay";
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  #mua:hover::before {
+    transform: translateX(0);
+  }
+   #logo {
+       text-align: right;
+   }
+   .nickgame {
+       font-size: 50px;
+       text-align: center;
+       text-shadow: 2px 2px 2px yellow;
+       margin: 30px;
+   }
+   .shop {
+       display: inline-block;
+       justify-content: center;
+       margin-left: 15px;
+       margin-right:15px;
+       padding:2%;
+   }
+   .bannick {
+       font-size: 30px;
+       margin-top: 5px;
+       color:black;
+       font-weight:bold;
+       text-shadow: 2px 2px 1px orange;
+       background-color:darkgrey;
+       height:35px;
+       width: 350px;
+       text-align: center;
+       border: 20px;
+       display: flex;
+       flex-direction: column;
+   }
+   .bannick2 {
+       text-align: center;
+   }
+   @media (max-width: 767px) {
+    .nickgame {
+      font-size: 30px;
+      margin: 20px;
+    }
+    .shop {
+      display: block;
+      margin-left: 0;
+      margin-right: 0;
+      padding: 10px;
+      position: static;
+    }
+    .bannick {
+      display:none;
+    }
+  }
+   .form{
+       text-align:center;
+       font-size:50px;
+       align-items: center;
+       margin:5%;
+       background-image: url(../img/backgroundsubmit.jpg);
+       background-size: cover;
+       border-radius: 60px;;
+       size: 10px;
+   }
+  
+   input {
+       margin: 10px;
+       font-size:70px;
+   }
+   .thongtinvip {
+    margin-top:5%;
+    text-align: center;
+    background: linear-gradient(to bottom,black ,#808080);
+    padding:3rem;
+  }
+  .thongtinsmall {
+    top:0;
+    right:10%;
+    color:red;
+    border-width: 50px;
+    border-color: blue;
+  }
+   .thongtin {
+    color:gold;
+    font-weight: bold;
+    margin-right:10%;
+    font-size:20px;
+    text-decoration: none;
+   }
+   .thongtin :hover {
+    transform: scale(1.2);
+    color:aquamarine;
+  }
+
+   .btn {
+   font-size:60px;
+   color:white;
+   border-radius: 30px;;
+   background-color: rgba(17, 17, 246, 0.864)
+   }
+   .btn:hover {
+    cursor: pointer;
+  }
+/* code tab */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    height: 35px;
+  }
+  
+  header h1 {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 3px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    text-shadow: red 1px 1px 2px;
+    margin:3px;
+    transition: all 0.3s linear;
+
+  }
+  
+  nav a:hover {
+    background-image: url(../img/btntab.png);
+    background-size: cover;
+    color:black;
+    font-weight: bold;
+  }
+  
+  .menu-btn {
+    display: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 35px;
+    border-radius: 15px;
+    position: fixed;
+    top:0;
+    left:0;
+    transition: background-color 5s ease;
+  }
+  /*dien thoai*/
+  @media (max-width: 787px) {
+    header {
+      background-color: white;
+    }
+  
+    header h1 {
+      font-size: 20px;
+    }
+  
+    nav li:not(:last-child) {
+      display: none;
+    }
+  
+    .show-menu li {
+      display: block;
+      margin-bottom: 10px;
+    }
+    /*dropdown menu*/
+    .menu-btn {
+      position: relative;
+      display: inline-block;
+      display:block;
+      padding:18px;
+      position: fixed;
+      top:0.5%;
+    }
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      background-color: dimgray;
+      min-width: 160px;
+      z-index: 1;
+    }
+
+    .dropdown-menu a {
+      color:rgb(227, 228, 235);
+      display: block;
+    }
+    .menu-btn button {
+      cursor: pointer;
+      background:linear-gradient(to right, #4568DC, #B06AB3);
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+      font-weight: bold;
+      font-size: 20px;
+      margin-top: 30px;
+      position: relative;
+      top: -35px;
+      left: -10%;
+      transition: all 0.4s linear;
+      border-width: 5px;
+      border-style: solid;
+      overflow: hidden;
+    }
+    
+    .menu-btn button:hover {
+      font-size: 22px;
+      background-position: center;
+      background-size: cover;
+    }
+    
+    .menu-btn button:hover:before {
+      transform: translateX(0);
+    } 
+
+    .menu-btn.active .dropdown-menu {
+      display: block;
+    }
+  }
+#logoutvip {
+  display: none;
+  position: fixed;
+  right:10px;
+  background-color:indianred;
+  border-color:#fff;
+  font-size:large;
+  top:14px;
+  padding:4px;
+}
+@media (max-width:390px){
+  .shop {
+    margin-left:0;
+  }
+
+}

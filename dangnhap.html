@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Đăng Nhập Tài Khoản</title>
+    <link rel="shotcut icon" type="image/x-icon" href="./img/dangky.jpg">
+    <link rel ="stylesheet" type ="text/css" href="./Css/Cssweb.css" >
+</head>
+<body>
+ <form class="form">
+    <h1 style="border-color:green; color:aliceblue">Đăng Nhập</h1>
+    <div>
+        <label style="font-weight: bold" for="taikhoan">Tài Khoản:</label>
+        <br>
+        <input id="taikhoan" width="150" height="150" type="text" style="width:65%;" placeholder="Nhập tài khoản">
+    </div>
+    <div> 
+        <label  style="font-weight: bold" for="matkhau" >Mật Khẩu:</label>
+        <br>
+        <input id="matkhau"type="password;" style="width:65%;" placeholder="Nhập mật khẩu">
+    </div>
+    <div id="dangnhapne" style="color:rgb(210, 239, 16); display:none;font-weight: bold;">
+        Tài khoản hoặc mật khẩu không chính xác !!!
+    </div>
+    <button class="btn"id="ok" onclick="dangnhap(event)"> Đăng Nhập</button>
+    <div style="font-weight: bold;">Tôi chưa có tài khoản
+        <a href="dangky.html" style="font-weight: bold;text-decoration: none;color:white">Đăng ký ngay</a>
+    </div>
+    <div style="font-weight: bold;">Quay về 
+        <a href="index.html" style="font-weight: bold;text-decoration: none;color:white">Trang chủ</a>
+    </div>
+    <script src="./javascript/login.js"></script>
+ </form>
+</body>
